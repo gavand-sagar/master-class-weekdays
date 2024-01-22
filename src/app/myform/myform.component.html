@@ -1,0 +1,16 @@
+<input [(ngModel)]="userName" placeholder="Username" type="text"/>
+<div class="danger" *ngIf="(userName == '')">Username is required</div>
+<div class="danger" *ngIf="(userName.length > 10)">Maxlength is 10</div>
+<br/>
+<input [(ngModel)]="password" placeholder="Password" type="password"/>
+<div class="danger" *ngIf="(password == '')">Password is required</div>
+<div class="danger" *ngIf="(password.length > 10)">Maxlength is 10</div>
+<br/>
+
+
+<button (click)="submit()">Login</button>
+
+
+<hr/>
+
+username Value in TS- {{userName}}

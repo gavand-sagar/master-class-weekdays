@@ -1,0 +1,28 @@
+<form [formGroup]="formObj" (ngSubmit)="submit()">
+  <input formControlName="username" type="text" placeholder="Username">
+  <br />
+  <div *ngIf="(formObj.controls['username']?.touched)&&(formObj.controls['username']?.invalid)">Username required</div>
+  <br />
+  <input formControlName="password" type="password" placeholder="Password" />
+  <br />
+  <br />
+  <input formControlName="email" type="text" placeholder="Email" />
+  <br />
+  <!-- <div *ngIf="(formObj.controls['email']?.errors")>Email required</div>
+    <div *ngIf="(formObj.controls['email']?.invalid)">Email Not Correctly Formatted</div> -->
+  <br />
+
+  <select formControlName="city">
+    <option value="">Select City</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Dehli">Dehli</option>
+    <option value="Banglore">Banglore</option>
+    <option value="Alibag">Alibag</option>
+  </select>
+  <br />
+  <br />
+  <input formControlName="dob" type="date" placeholder="Date of birth" />
+  <br />
+  <br />
+  <button>SUBMIT</button>
+</form>
