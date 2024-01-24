@@ -8,6 +8,7 @@ import { MyformComponent } from './myform/myform.component';
 import { MyReactiveFormComponent } from './my-reactive-form/my-reactive-form.component';
 import { MakeItyellowDirective } from './make-ityellow.directive';
 import { MytoggleDirective } from './mytoggle.directive';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { MytoggleDirective } from './mytoggle.directive';
     MyformComponent,
     MyReactiveFormComponent,
     MakeItyellowDirective,
-    MytoggleDirective
+    MytoggleDirective,
+    PipeDemoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

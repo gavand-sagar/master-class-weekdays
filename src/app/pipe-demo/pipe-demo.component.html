@@ -1,0 +1,15 @@
+<!-- <p>{{username | uppercase}}</p>
+<p>{{username | lowercase}}</p>
+<p>{{username}}</p>
+
+<p>{{amount}}</p>
+
+<p>{{ (date | date:"dd-MMM-yyyy") | uppercase  }}</p>
+
+<p>{{person | json | uppercase | lowercase}}</p>
+ -->
+
+<p>PURE PIPE - {{amount | nAIfZero}}</p>
+<p>PURE PIPE - {{0 | nAIfZero}}</p>
+<hr/>
+<p>IMPURE PIPE - {{0 | pureImpureDemo}}</p>
