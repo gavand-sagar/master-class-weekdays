@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { SagarComponent } from './sagar/sagar.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { SimpleComponentComponent } from './simple-component/simple-component.component';
@@ -15,6 +15,7 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     RouterOutlet,
     SagarComponent,
     UserDetailComponent,
