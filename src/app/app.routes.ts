@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ServiceDemoComponent } from './service-demo/service-demo.component';
 import { ApiDemoComponent } from './api-demo/api-demo.component';
+import { ApiDemo2Component } from './api-demo-2/api-demo-2.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +27,10 @@ export const routes: Routes = [
   {
     path:'api-demo',
     component: ApiDemoComponent
+  },
+  {
+    path:'api-demo-2',
+    component: ApiDemo2Component
   },
   {
     path: "**",
