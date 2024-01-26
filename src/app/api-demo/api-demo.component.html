@@ -1,0 +1,13 @@
+<p>api-demo works!</p>
+
+<button (click)="loadCategories()">Load Categories</button>
+<br/>
+<li *ngFor="let item of categories">{{item}}</li>
+
+
+<hr/>
+<button (click)="handleClick()">Load new Fact</button>
+
+<p>
+  {{fact}}
+</p>
